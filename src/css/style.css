@@ -1,0 +1,93 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Fredoka", sans-serif;
+}
+
+nav {
+  position: fixed;
+  width: 70px;
+  height: 100%;
+  background-color: #c83226;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  background-color: #e2392b;
+  height: 4em;
+  border-radius: 10px;
+  margin: 15px 0 5px 5px;
+  width: 750px;
+  padding-left: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+nav .logo img {
+  width: 2.5em;
+}
+nav .logo h1 {
+  color: #fcfff5;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  background-color: #e2392b;
+  color: #fcfff5;
+  text-decoration: none;
+  margin: 15px 0 15px 10px;
+  padding: 15px 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 750px;
+}
+
+nav ul li a p {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+nav:hover {
+  width: 225px;
+}
+
+nav.active .logo h1 {
+  margin-left: 15px;
+  opacity: 1;
+}
+
+nav.active ul li a p {
+  opacity: 1;
+  margin-left: 15px;
+}
+
+nav.active ul li a:hover {
+  background-color: #ee5300;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+main {
+  margin-left: 75px;
+  padding-left: 25px;
+  transition: 0.5s ease-in-out;
+}
+
+/*# sourceMappingURL=style.css.map */
